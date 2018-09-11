@@ -1,5 +1,7 @@
 This is a port of the [Arabica theme for Ghost](https://github.com/slunsford/arabica) to Hugo. You can find a live demo [here](https://arabica.netlify.com).
 
+![Preview](images/screenshot.png)
+
 ## Quickstart
 
 ### Install
