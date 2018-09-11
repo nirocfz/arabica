@@ -1,7 +1,12 @@
 baseurl = "https://example.org/"
-title = "Hugo Themes"
-author = "Steve Francia"
-copyright = "Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved."
+title = "Arabica"
+author = "John Doe"
 canonifyurls = true
 paginate = 3
 theme = "arabica"
+
+[params]
+    description = "A minimal Hugo theme"
+    replaceGoogleFonts = "fonts.loli.net"
+    twitter = "example"
+    facebook = "example"

@@ -20,6 +20,31 @@ $ cd arabica/exampleSite
 $ hugo server --themesDir ../..
 ```
 
+### Configure Hugo
+
+Add the folling line to `config.toml` to use the theme
+
+```
+theme = "arabica"
+```
+
+This is the `config.toml` of [exampleSite](/exampleSite)
+
+```
+baseurl = "https://example.org/"
+title = "Arabica"
+author = "John Doe"
+canonifyurls = true
+paginate = 3
+theme = "arabica"
+
+[params]
+    description = "A minimal Hugo theme"
+    replaceGoogleFonts = "fonts.loli.net"
+    twitter = "example"
+    facebook = "example"
+```
+
 Thanks
 
 * [Hugo](https://gohugo.io/)
