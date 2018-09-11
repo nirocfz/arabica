@@ -4,9 +4,10 @@
 name = "Arabica"
 license = "MIT"
 licenselink = "https://github.com/nirocfz/arabica/blob/master/LICENSE"
-description = ""
-tags = []
-features = []
+description = "A port of the Ghost arabica theme for Hugo"
+homepage = "https://arabica.netlify.com"
+tags = ["blog"]
+features = ["smooth", "minimal"]
 min_version = "0.41"
 
 [author]
