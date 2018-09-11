@@ -1,4 +1,22 @@
-This is a port of the [Arabica theme for Ghost](https://github.com/slunsford/arabica) to Hugo.
+This is a port of the [Arabica theme for Ghost](https://github.com/slunsford/arabica) to Hugo. You can find a live demo [here](https://arabica.netlify.com).
+
+## Quickstart
+
+### Install
+
+Inside the folder of your Hugo site run:
+
+```
+$ cd themes
+$ git clone https://github.com/nirocfz/arabica
+```
+
+### Preview exampleSite
+
+```
+$ cd arabica/exampleSite
+$ hugo server --themesDir ../..
+```
 
 Thanks
 
