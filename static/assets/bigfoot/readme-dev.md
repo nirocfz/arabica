@@ -1,0 +1,1 @@
+Updates to existing styles should be made in `src/scss/button.scss` and `src/scss/popover.scss`. New styles should be created as BEM-style variants on the existing button and popover styles. You will also have to update rules in `Gruntfile.js` in order to create the required `dist` files.

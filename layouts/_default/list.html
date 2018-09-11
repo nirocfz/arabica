@@ -1,0 +1,20 @@
+{{ define "body_class" }}tag-template{{ end }}
+{{ define "title" }}{{ .Title }}{{ end }}
+{{ define "main" }}
+{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 10) }}
+<main class="content" role="main">
+  {{ if not $paginator.HasPrev }}
+    {{ if eq .Data.Plural "tags" }}
+      <h2 class="tag-title">{{ .Title }}</h2>
+    {{ end }}
+  {{ end }}
+
+	<div class="extra-pagination">
+	    {{ partial "pagination.html" .}}
+	</div>
+  {{ range $paginator.Pages  }}
+  {{ .Render "summary"  }}
+  {{ end  }}
+  {{ partial "pagination.html" .  }}
+</main>
+{{ end }}

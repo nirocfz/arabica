@@ -1,0 +1,29 @@
+{{ define "body_class" }}post-template{{ end }}
+{{ define "main" }}
+<main class="content" role="main">
+  <article class="post">
+    <header class="post-header">
+      <h2 class="post-title">{{ .Title }}</h2>
+      <section class="post-meta">
+        <time class="post-date">{{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}</time>
+      </section>
+    </header>
+    <section class="post-content">
+      {{ .Content }}
+    </section>
+    <footer class="post-footer">
+      {{ with .Params.tags -}}
+      <section class="tags post-meta">
+        Tagged
+        {{ range . }}
+        {{- $name := . -}}
+          {{- with $.Site.GetPage "taxonomy" (printf "tags/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "tags/%s" ($name | urlize))) -}}
+          <a href="{{ .Permalink }}">{{ $name }}</a>
+          {{ end -}}
+        {{ end }}
+      </section>
+      {{- end }}
+    </footer>
+  </article>
+</main>
+{{ end }}

@@ -1,0 +1,13 @@
+<article class="post">
+	<header class="post-header">
+		<h2 class="post-title"><a href="{{ .URL }}">{{ .Title }}</a></h2>
+	</header>
+	<section class="post-excerpt">
+    <p>
+      {{ .Summary }} &hellip; <a class="read-more" href="{{ .URL }}">&raquo;</a>
+    </p>
+	</section>
+	<footer class="post-meta">
+    <time class="post-date">{{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02")  }}</time>
+	</footer>
+</article>

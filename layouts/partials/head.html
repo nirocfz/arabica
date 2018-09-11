@@ -1,0 +1,39 @@
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Page Meta -->
+    <title>
+      {{ block "title" . }}
+      {{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}
+      {{ end }}
+		</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{ if .RSSLink -}}
+      <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ end -}}
+
+    <!-- Styles and Fonts -->
+    <link rel="stylesheet" type="text/css" href="{{ "assets/css/normalize.css" | relURL }}" />
+    <link rel="stylesheet" type="text/css" href="{{ "assets/css/icons.css" | relURL }}" />
+    <link rel="stylesheet" type="text/css" href="{{ "assets/css/screen.css" | relURL }}" />
+    {{ if .Site.Params.replaceGoogleFonts }}
+    <link href="https://{{ .Site.Params.replaceGoogleFonts }}/css?family=Bree+Serif|Lato:100,100i,300,300i,400,400i,700,700i|Source+Code+Pro:300,400,500,700" rel="stylesheet">
+    {{ else }}
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato:100,100i,300,300i,400,400i,700,700i|Source+Code+Pro:300,400,500,700" rel="stylesheet">
+    {{ end }}
+
+    <!-- Bigfoot - popover footnotes -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ "assets/bigfoot/dist/bigfoot.js" | relURL }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ "assets/bigfoot/dist/bigfoot-number.css" | relURL }}" />
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+    <!-- custom css -->
+    {{ range .Site.Params.customCSS }}
+    <link rel="stylesheet" href="{{ "/css/" | relURL }}{{ . }}">
+    {{ end }}
+</head>

@@ -1,0 +1,20 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "Arabica"
+license = "MIT"
+licenselink = "https://github.com/nirocfz/arabica/blob/master/LICENSE"
+description = ""
+tags = []
+features = []
+min_version = "0.41"
+
+[author]
+  name = "Chen Fangzhou"
+  homepage = "https://fixatom.com"
+
+# If porting an existing theme
+[original]
+  name = "Arabica"
+  homepage = "https://thedarkroast.com/"
+  repo = "https://github.com/slunsford/arabica"

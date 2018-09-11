@@ -1,0 +1,13 @@
+{{ define "body_class" }}page-template{{ end }}
+{{ define "main" }}
+<main class="content" role="main">
+  <article class="post page">
+    <header class="post-header">
+      <h2 class="post-title">{{ .Title }}</h2>
+    </header>
+    <section class="post-content">
+      {{ .Content }}
+    </section>
+  </article>
+</main>
+{{ end }}
