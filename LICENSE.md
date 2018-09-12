@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2014-2018 Sean Lunsford (original theme)
+Copyright (c) 2014-2018 Sean Lunsford (original theme)  
 Copyright (c) 2018 Chen Fangzhou
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
