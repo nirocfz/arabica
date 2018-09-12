@@ -50,3 +50,7 @@ Thanks
 * [Hugo](https://gohugo.io/)
 * [slunsford/arabica](https://github.com/slunsford/arabica)
 * [xianmin/hugo-theme-jane](https://github.com/xianmin/hugo-theme-jane)
+
+## License
+
+See [LICENSE](/LICENSE)
