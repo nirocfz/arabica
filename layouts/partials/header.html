@@ -15,7 +15,7 @@
 	<div class="nav">
     {{ $currentPage := . }}
 		{{ range .Site.Menus.main }}
-      <a class="nav- {{ if $currentPage.IsMenuCurrent "main" . }}nav-current{{ end }}" role="presentation" href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a>
+      <a class="nav- {{ if $currentPage.IsMenuCurrent "main" . }}nav-current{{ end }}" role="presentation" href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a>
 		{{ end }}
 	</div>
 </header>

@@ -1,7 +1,6 @@
 baseurl = "https://example.org/"
 title = "Arabica"
 author = "John Doe"
-canonifyurls = true
 paginate = 3
 theme = "arabica"
 
