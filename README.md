@@ -34,7 +34,6 @@ This is the `config.toml` of [exampleSite](/exampleSite)
 baseurl = "https://example.org/"
 title = "Arabica"
 author = "John Doe"
-canonifyurls = true
 paginate = 3
 theme = "arabica"
 
@@ -53,4 +52,4 @@ Thanks
 
 ## License
 
-See [LICENSE](/LICENSE.md)
+See [LICENSE](https://raw.githubusercontent.com/nirocfz/arabica/master/LICENSE.md)
