@@ -6,7 +6,7 @@ license = "MIT"
 licenselink = "https://github.com/nirocfz/arabica/blob/master/LICENSE"
 description = "A port of the Ghost arabica theme for Hugo"
 homepage = "https://github.com/nirocfz/arabica"
-tags = ["blog"]
+tags = ["blog", "minimal"]
 features = ["smooth", "minimal"]
 min_version = "0.41"
 
