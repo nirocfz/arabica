@@ -52,4 +52,4 @@ Thanks
 
 ## License
 
-See [LICENSE](https://raw.githubusercontent.com/nirocfz/arabica/master/LICENSE.md)
+See [LICENSE](https://github.com/nirocfz/arabica/blob/master/LICENSE)
