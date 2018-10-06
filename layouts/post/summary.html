@@ -1,5 +1,8 @@
 <article class="post">
 	<header class="post-header">
+    {{ with .Params.image }}
+      <img src="{{ . }}"></img>
+    {{ end }}
 		<h2 class="post-title"><a href="{{ .URL }}">{{ .Title }}</a></h2>
 	</header>
 	<section class="post-excerpt">
