@@ -39,6 +39,7 @@ theme = "arabica"
 
 [params]
     description = "A minimal Hugo theme"
+    dateFormatToUse = "2006-01-02"
     replaceGoogleFonts = "fonts.loli.net"
     twitter = "example"
     facebook = "example"
