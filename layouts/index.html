@@ -1,6 +1,10 @@
 {{ define "main" }}
 	<main class="content" role="main">
-    {{ $paginator := .Paginate (where .Pages "Type" "post") }}
+    {{ $pages := .Pages }}
+    {{ if .IsHome }}
+      {{ $pages = where .Site.RegularPages "Type" "in" site.Params.mainSections }}
+    {{ end }}
+    {{ $paginator := .Paginate $pages }}
     <div class="extra-pagination">
       {{ partial "pagination.html" . }}
     </div>
