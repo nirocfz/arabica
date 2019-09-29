@@ -3,11 +3,11 @@
     {{ with .Params.image }}
       <img src="{{ . }}"></img>
     {{ end }}
-		<h2 class="post-title"><a href="{{ .URL }}">{{ .Title }}</a></h2>
+		<h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
 	</header>
 	<section class="post-excerpt">
     <p>
-      {{ .Summary }} &hellip; <a class="read-more" href="{{ .URL }}">&raquo;</a>
+      {{ .Summary }} &hellip; <a class="read-more" href="{{ .RelPermalink }}">&raquo;</a>
     </p>
 	</section>
 	<footer class="post-meta">
