@@ -22,7 +22,7 @@ $ hugo server --themesDir ../..
 
 ### Configure Hugo
 
-Add the folling line to `config.toml` to use the theme
+Add the following line to `config.toml` to use the theme
 
 ```
 theme = "arabica"
